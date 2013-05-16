@@ -56,11 +56,13 @@ var writeToSqlite  = function (db) {
   }, {
     id: 'shortname'
   })
+  Course.sync()
 
   var Player = db.define("player", {
     name:    String,
     country: String
   })
+  Player.sync()
 
   var Record = db.define("record", {
     time: Number,
@@ -71,4 +73,5 @@ var writeToSqlite  = function (db) {
   })
   Record.hasOne('course', Course, { required: true })
   Record.hasOne('player', Player, { required: true })
+  Record.sync()
 }
