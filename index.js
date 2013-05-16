@@ -1,8 +1,11 @@
-var orm   = require('orm')
-  , nano  = require('nano')
-  , excel = require('excel')
-  , _     = require('lodash')
-  , argv  = require('optimist').argv
+var orm    = require('orm')
+  , nano   = require('nano')
+  , excel  = require('excel')
+  , _      = require('underscore-contrib')
+  , o_o    = require('lodash')
+  , path   = require('path')
+  , moment = require('moment')
+  , argv   = require('optimist').argv
   ;
 
 // orm.connect('fzmv.sqlite', function (err, db) {
