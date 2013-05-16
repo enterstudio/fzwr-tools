@@ -33,12 +33,11 @@ excel(entriesFile, function (err, data) {
   //           .tap(console.log)
 
   var objectify    = _.partial(_.object, column_names)
-  var objectifyMap = _.partialRight(_.map, objectify)
-  var groupTypes   = _.partialRight(_.groupBy, 'type')
+  var objectifyMap = _.partial(_.flip2(_.map), objectify)
+  var groupTypes   = _.partial(_.flip2(_.groupBy), 'type')
 
-  var entries = _.compose(
-    groupTypes,
-    objectifyMap
+  var entries = _.pipeline(
+    objectifyMap, groupTypes
   )(entries)
 
   console.log(entries)
