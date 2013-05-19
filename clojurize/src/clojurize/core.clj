@@ -1,6 +1,6 @@
 (ns clojurize.core
-  (:require [dk.ative.docjure.spreadsheet :as dj]))
-
+  (:require [dk.ative.docjure.spreadsheet :as dj]
+            [clojurize.fzmv :as mv]))
 
 (def rows
   (->> (dj/load-workbook "../history.xlsx")
@@ -12,11 +12,10 @@
   (let [columns (->> headers
                      (dj/cell-seq)
                      (map dj/read-cell))]
-       columns))
+       (zipmap [:A :B :C :D :E :F :G] columns)))
 
 
 (mapped-rows rows)
-
 
 (defn wr-rows
       [worksheet]
@@ -33,4 +32,4 @@
        (dj/select-sheet "WRs")))
 
 
-((wr-rows wr-sheet) 1)
+((wr-rows wr-sheet) 0)
