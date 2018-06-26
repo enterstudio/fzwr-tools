@@ -4,7 +4,9 @@
   "description": "Couple of tools to handle FZMV WR data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": "",
   "author": "Ricardo Mendes",
@@ -12,11 +14,13 @@
   "dependencies": {
     "sqlite3": "2.1.x",
     "orm": "2.0.x",
-    "nano": "3.3.x",
+    "nano": "5.11.0",
     "excel": "0.0.x",
     "underscore-contrib": "0.0.x",
     "moment": "2.0.x",
     "rsvp": "1.2.x",
-    "optimist": "0.4.x"
-  }
+    "optimist": "0.4.x",
+    "snyk": "^1.85.0"
+  },
+  "snyk": true
 }
