@@ -10,7 +10,7 @@
   "author": "Ricardo Mendes",
   "license": "MIT",
   "dependencies": {
-    "sqlite3": "2.1.x",
+    "sqlite3": "2.2.0",
     "orm": "2.0.x",
     "nano": "3.3.x",
     "excel": "0.0.x",
