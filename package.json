@@ -15,7 +15,7 @@
     "nano": "3.3.x",
     "excel": "0.0.x",
     "underscore-contrib": "0.0.x",
-    "moment": "2.0.x",
+    "moment": "2.29.2",
     "rsvp": "1.2.x",
     "optimist": "0.4.x"
   }
