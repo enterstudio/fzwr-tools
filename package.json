@@ -12,7 +12,7 @@
   "dependencies": {
     "sqlite3": "2.1.x",
     "orm": "2.0.x",
-    "nano": "3.3.x",
+    "nano": "5.11.0",
     "excel": "0.0.x",
     "underscore-contrib": "0.0.x",
     "moment": "2.0.x",
