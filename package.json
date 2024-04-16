@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "sqlite3": "2.1.x",
-    "orm": "2.0.x",
+    "orm": "5.0.3",
     "nano": "3.3.x",
     "excel": "0.0.x",
     "underscore-contrib": "0.0.x",
