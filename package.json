@@ -13,7 +13,7 @@
     "sqlite3": "2.1.x",
     "orm": "2.0.x",
     "nano": "3.3.x",
-    "excel": "0.0.x",
+    "excel": "1.0.1",
     "underscore-contrib": "0.0.x",
     "moment": "2.0.x",
     "rsvp": "1.2.x",
